@@ -2,9 +2,10 @@ package ver1;
 import java.awt.Image;
 
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextArea;
 
 public class Main {
 	
@@ -17,9 +18,11 @@ public class Main {
 		
 		JFrame frame = new JFrame("To-do");
 		JPanel panel = new JPanel();
-		JLabel label = new JLabel("Test Text");
+		JTextArea textarea = new JTextArea("", 1, 20);
+		JButton btn1 = new JButton("okay");
 		
-		panel.add(label);
+		panel.add(textarea);
+		panel.add(btn1);
 		frame.add(panel);
 		
 		frame.setVisible(true);
