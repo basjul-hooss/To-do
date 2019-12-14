@@ -3,6 +3,7 @@ import java.awt.Image;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class Main {
@@ -16,8 +17,9 @@ public class Main {
 		
 		JFrame frame = new JFrame("To-do");
 		JPanel panel = new JPanel();
+		JLabel label = new JLabel("Test Text");
 		
-		
+		panel.add(label);
 		frame.add(panel);
 		
 		frame.setVisible(true);
